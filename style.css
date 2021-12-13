@@ -39,11 +39,10 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30vh;
-    margin-bottom: 5vh;
-    
-     
+    margin-top: 20vh;
+    margin-bottom: 3vh;         
 }
+
 .container-presentation{   
     color: #ffff;
     padding: 4vw;
@@ -97,4 +96,13 @@ p, h3, h5{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.formGoogle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe{
+    height: 30vh;
+    width: 30vw;
 }
