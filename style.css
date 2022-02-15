@@ -127,5 +127,9 @@ iframe{
     .card a {
         margin: 1vh;
     }
+	iframe{
+        height: 60vw;
+        width: 75vw;
+    }
     
 }
