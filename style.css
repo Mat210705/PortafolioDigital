@@ -1,135 +1,338 @@
-html, body{
+html, body {
     background-image: url("./img/background-white.jpg");
     overflow-y: scroll;
-	 overflow-x: hidden;
-    
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
  
-header{
+header {
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-  
     background-image: url("./img/background-cubes.jpg");
-   
-       
+    background-size: cover;
+    background-position: center;
 }
-header h1{    
+
+header h1 {    
     font-size: 12vw;
     font-family: 'Be Vietnam Pro', sans-serif;
+    margin-bottom: 0;
 }
-header h2{
+
+header h2 {
     font-size: 6vw;
     font-family: 'Be Vietnam Pro', sans-serif;
+    margin-top: 1vh;
 }
-.container-titulo{
-    margin-top:10vh;
+
+.container-titulo {
+    margin-top: 10vh;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-header img{
-    margin-top: 30vh;
-    
+header img {
+    margin-top: 20vh;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.box1{
+header img:hover {
+    transform: translateY(5px);
+}
+
+.box1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 3vh;         
 }
 
-.container-presentation{   
+.container-presentation {   
     color: #ffff;
     padding: 4vw;
     width: 50vw;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-image: url("./img/background-tunel.jpg");   
     background-size: cover;
+    background-position: center;
 }
 
-.container-presentation h3{
+.container-presentation h3 {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
-.container-presentation .contacto{
+
+.container-presentation .contacto {
     margin: 2vh;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
-   
+    flex-wrap: wrap;
 }
-.contacto .img{
-    margin:0;
+
+.contacto .img {
+    margin: 0;
     padding: 0;
 }
-.container1{
+
+.container1 {
     background-color: #fff;
 }
 
 .animate__animated.animate__shakeX {
     --animate-duration: 10s;
-  }
+}
 
-p, h3, h5{
+p, h3, h5 {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Spartan', sans-serif;
+}
+
+.icono-contacto {
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 .icono-contacto:hover {
     -webkit-animation: shake 1s;
     animation: shake 1s;
+    transform: scale(1.1);
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: center;
 }
-.card{
+
+.card {
     width: 45vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.arrows{
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.arrows {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 3vh 0;
 }
-.formGoogle{
-    display:flex;
+
+.arrows img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrows img:hover {
+    transform: translateY(-5px);
+}
+
+.formGoogle {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-iframe{
-    height: 30vh;
-    width: 30vw;
+
+.formGoogle p {
+    margin-bottom: 1rem;
 }
+
+.formGoogle button {
+    margin-bottom: 1.5rem;
+}
+
+iframe {
+    height: 70vh;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.front-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades1, .habilidades2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.habilidades1 img, .habilidades2 img {
+    transition: transform 0.3s ease;
+}
+
+.habilidades1 img:hover, .habilidades2 img:hover {
+    transform: scale(1.2);
+}
+
+.desplegarForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.desplegarForm p {
+    margin-bottom: 1rem;
+}
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+    .container-presentation {   
+        width: 80vw;
+        padding: 6vw;
+    }
+    
+    .card {
+        width: 80vw;
+    }
+    
+    iframe {
+        width: 90%;
+        height: 60vh;
+    }
+    
+    header h1 {
+        font-size: 14vw;
+    }
+    
+    header h2 {
+        font-size: 7vw;
+    }
+    
+    .habilidades1, .habilidades2 {
+        flex-wrap: wrap;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+    .container-presentation {   
+        width: 90vw;
+        padding: 8vw;
+    }
+    
+    .card {
+        width: 90vw;
+    }
+    
+    iframe {
+        width: 95%;
+        height: 80vh;
+    }
+    
+    header h1 {
+        font-size: 16vw;
+    }
+    
+    header h2 {
+        font-size: 8vw;
+    }
+    
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .icono-contacto {
+        margin: 15px 0;
+    }
+}
+
+/* Very small screens */
 @media screen and (max-width: 389px) {
-    .cards{
+    .cards {
         display: flex;
         justify-content: center; 
     }
-    .card{
-        width: 80vw;
-        margin-top: 10vh;
-    }
-    .container-presentation{   
-        color: #ffff;
-        padding: 4vw;
-        width: 80vw;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-        background-image: url("./img/background-tunel.jpg");   
-        background-size: cover;
-    }
-    .card a {
-        margin: 1vh;
-    }
-	iframe{
-        height: 60vw;
-        width: 75vw;
+    
+    .card {
+        width: 90vw;
+        margin-top: 5vh;
     }
     
+    .container-presentation {   
+        width: 90vw;
+    }
+    
+    .card a {
+        margin: 1vh;
+        display: block;
+    }
+    
+    iframe {
+        height: 70vh;
+        width: 95%;
+    }
+    
+    .habilidades1, .habilidades2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .habilidades1 img, .habilidades2 img {
+        margin: 10px 0;
+    }
 }
